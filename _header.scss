@@ -1,0 +1,22 @@
+@mixin flexDefinition($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header{
+@include flexDefinition(column,lightgreen);
+    color: $textColor;
+    button{
+        background: $primaryBtn;
+        &:hover{
+            color:red;
+        }
+        &::after{
+            content:"Heloooo";
+        }
+    }
+}

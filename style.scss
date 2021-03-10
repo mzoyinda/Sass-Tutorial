@@ -1,0 +1,11 @@
+@import './variables';
+@import './header';
+
+.contact {
+@include flexDefinition(row, lightgreen);
+width: 100% - 50%;
+}
+.info{
+    @extend header;
+
+}
